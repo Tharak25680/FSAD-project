@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete E-Commerce Platform | All Features Implemented</title>
+    <!-- Font Awesome 6 for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Inter for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- STICKY NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🛒<span style="color: var(--accent-light);">MART</span></div>
+        <div class="nav-links">
+            <a href="#" data-page="home"><i class="fas fa-home"></i> Home</a>
+            <a href="#" data-page="cart"><i class="fas fa-shopping-cart"></i> Cart <span id="cart-count" class="cart-badge">0</span></a>
+            <a href="#" data-page="profile" id="profile-link"><i class="fas fa-user"></i> Profile</a>
+            <a href="#" data-page="orders" id="orders-link"><i class="fas fa-box"></i> Orders</a>
+            <a href="#" data-page="admin" id="admin-link" style="display: none;"><i class="fas fa-shield-alt"></i> Admin</a>
+            <button id="auth-btn"><i class="fas fa-sign-in-alt"></i> <span>Login</span></button>
+            <button class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i> Theme</button>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container" id="app-container">
+        <!-- Pages will be dynamically injected here -->
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container"></div>
+
+    <!-- MODAL CONTAINER -->
+    <div id="modal-container"></div>
+	<script src="Script.js"></script>
+</body>
+</html>
